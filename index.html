@@ -20,6 +20,20 @@
 <body>
 	<center>
 	<h1>Hello!</h1>
+	<nav id="nav_bar">
+		<ul>
+			<li><a href="https://linkedin.com/in/jamesm94" target="_blank"><img src="assets/lin.png" alt="LinkedIn" id=	"lin" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
+				
+			<li><a href="https://twitter.com/jom_94" target="_blank"><img src="assets/twit.png" alt="Twitter" id="twit" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
+				
+			<li><a href="https://github.com/jomichael94" target="_blank"><img src="assets/git.png" alt="GitHub" id="git" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
+			<!--<li><a href="cv.html" alt="CV" style="font-size:16pt">CV</a></li>-->
+			<div id="nav_logo"></div>
+		</ul>
+	</nav>
+	<div id="hover_message">
+		<br>
+	</div>
 	<!--
 	<p>It's kinda strange that you found this you know...</p>
 	-->
@@ -46,6 +60,26 @@
 		if (i==0){i=1;}
 		else {i=0;}
 	};
+</script>
+<script>
+function hover(id) {
+	var el_id = document.getElementById(id).id;
+	document.getElementById(id).src = "assets/".concat(el_id).concat("_hover.png");
+	var message_el = document.getElementById("hover_message");
+	if (el_id == "twit") {
+		message_el.innerHTML = "Follow me on Twitter!";
+	} else if (el_id == "lin") {
+		message_el.innerHTML = "Connect with me on LinkedIn!";
+	} else if (el_id == "git") {
+		message_el.innerHTML = "Check out my projects on GitHub!";
+	}
+}
+function hoverOut(id) {
+	var el_id = document.getElementById(id).id;
+	document.getElementById(id).src = "assets/".concat(el_id).concat(".png");
+	var message_el = document.getElementById("hover_message");
+	message_el.innerHTML = "<br>";
+}
 </script>
 
 </html>
