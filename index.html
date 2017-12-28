@@ -25,10 +25,11 @@
 			<div id="nav_logo"></div>
 		</ul>
 	</nav>
+	<!--
 	<div id="hover_message">
 		<br>
 	</div>
-	<br>
+	-->
 	<!--
 	<p>It's kinda strange that you found this you know...</p>
 	-->
@@ -61,6 +62,7 @@
 function hover(id) {
 	var el_id = document.getElementById(id).id;
 	document.getElementById(id).src = "assets/".concat(el_id).concat("_hover.png");
+	/*
 	var message_el = document.getElementById("hover_message");
 	if (el_id == "twit") {
 		message_el.innerHTML = "Follow me on Twitter!";
@@ -69,12 +71,15 @@ function hover(id) {
 	} else if (el_id == "git") {
 		message_el.innerHTML = "Check out my projects on GitHub!";
 	}
+	*/
 }
 function hoverOut(id) {
 	var el_id = document.getElementById(id).id;
 	document.getElementById(id).src = "assets/".concat(el_id).concat(".png");
+	/*
 	var message_el = document.getElementById("hover_message");
 	message_el.innerHTML = "<br>";
+	*/
 }
 </script>
 
