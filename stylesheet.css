@@ -110,6 +110,7 @@ footer{
 }
 body {
 	margin-top: 40px;
+	font-family:'courier new';
 }
 #top-button{
 	position:fixed;
@@ -119,4 +120,12 @@ body {
 #top-button img {
 	height:50px;
 	width:50px;
+}
+
+h1 {
+	font-size: 48pt;
+	font-weight: bold;
+}
+footer {
+	font-size: 10pt;
 }
