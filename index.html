@@ -54,11 +54,18 @@
 		    "https://frinkiac.com/img/S05E10/133315.jpg",
 		    "https://frinkiac.com/img/S02E20/161592.jpg"
 		   ];
-
+	
+	var j = 0;
 	function genHomurs() {
 		//IRTNPMBAYIMIASOMHOUIATOKSEHBOIALAMSTWTOIPADINEOUBI
-		var i = Math.floor(Math.random() * imgs.length)
+		var i = Math.floor(Math.random() * imgs.length);
+		while (i == j) {
+			i = Math.floor(Math.random() * imgs.length);
+		}
 		document.getElementById("image").src = imgs[i];
+		j = i;
+		console.log("i: " + i + " , j: " + j);
+		
 	};
 
 	function hover(id) {
