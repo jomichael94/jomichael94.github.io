@@ -16,7 +16,7 @@
   width:37px;
 }
 
-.header_text, .navbar {
+.header_image, .header_text, .navbar {
   animation: fadein 0.5s;
   -webkit-animation: fadein 0.5s;
        -moz-animation: fadein 0.5s;
@@ -36,8 +36,8 @@
   background-color: #0276b3;
 }
 
-.header img {
-  margin-bottom: -30px;
+.header_image {
+  margin-bottom: -120px;
 }
 
 
@@ -122,57 +122,6 @@ hr {
         -ms-animation: fadein 4s;
          -o-animation: fadein 4s;
 }
-
-/*
-.in, #twitter:hover .out{
-   display:none;
-}
-.out, #twitter:hover .in{
-   display:inline;
-   animation: fadein 0.15s;
-   -webkit-animation: fadein 0.15s;
-        -moz-animation: fadein 0.15s;
-         -ms-animation: fadein 0.15s;
-          -o-animation: fadein 0.15s;
-}
-
-.in, #linkedin:hover .out{
-   display:none;
-}
-.out, #linkedin:hover .in{
-   display:inline;
-   animation: fadein 0.15s;
-   -webkit-animation: fadein 0.15s;
-        -moz-animation: fadein 0.15s;
-         -ms-animation: fadein 0.15s;
-          -o-animation: fadein 0.15s;
-}
-
-.in, #github:hover .out{
-   display:none;
-}
-.out, #github:hover .in{
-   display:inline;
-   animation: fadein 0.15s;
-   -webkit-animation: fadein 0.15s;
-        -moz-animation: fadein 0.15s;
-         -ms-animation: fadein 0.15s;
-          -o-animation: fadein 0.15s;
-}
-
-.in, #email:hover .out{
-   display:none;
-}
-.out, #email:hover .in{
-   display:inline;
-   animation: fadein 0.15s;
-   -webkit-animation: fadein 0.15s;
-        -moz-animation: fadein 0.15s;
-         -ms-animation: fadein 0.15s;
-          -o-animation: fadein 0.15s;
-}
-*/
-
 
 @keyframes fadein {
     from { opacity: 0; }
