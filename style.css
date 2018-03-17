@@ -31,19 +31,20 @@
 .header {
   padding-top: 40px;
   padding-bottom: 60px;
-  text-align: center;
   color: white;
   background-color: #0276b3;
 }
 
 .header_image {
   margin-bottom: -120px;
+  text-align: center;
 }
 
 
 .header_text {
   font-size: 64pt;
   letter-spacing: 6px;
+  text-align: center;
   margin-bottom: 10px;
   font-family: 'Alike', serif;
   -webkit-touch-callout: none;
