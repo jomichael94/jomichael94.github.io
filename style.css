@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Alike|Kreon');
+
+.nav_list {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+}
+
+.nav_item {
+  display: inline;
+  margin: 25px;
+}
+
+.nav_item img {
+  height:37px;
+  width:37px;
+}
+
+.header_text, .navbar {
+  animation: fadein 0.5s;
+  -webkit-animation: fadein 0.5s;
+       -moz-animation: fadein 0.5s;
+        -ms-animation: fadein 0.5s;
+         -o-animation: fadein 0.5s;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: white;
+  background-color: #0276b3;
+}
+
+.header img {
+  margin-bottom: -30px;
+}
+
+
+.header_text {
+  font-size: 64pt;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  font-family: 'Alike', serif;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: #0276b3;
+  font-family: 'Kreon', serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.body_container {
+  margin:10px;
+}
+
+.intro h1 {
+  font-size: 34pt;
+}
+
+.intro {
+  max-width: 1050px;
+  text-align: center;
+  margin: 0 auto;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+}
+
+.intro p {
+  margin-bottom: -3px;
+}
+
+.footer {
+  margin-top:60px;
+  text-align: center;
+  font-size: 11pt;
+  color: white;
+  background-color: #0276b3;
+  height: 195px;
+  font-family: 'Alike', serif;
+}
+
+.footer p {
+  padding-top: 25px;
+}
+
+hr {
+  border: none;
+  border-top: 15px solid #0276b3;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.work_header {
+  /*margin-top: 60px;*/
+}
+
+.work_header, .work {
+  text-align: center;
+  animation: fadein 4s;
+  -webkit-animation: fadein 4s;
+       -moz-animation: fadein 4s;
+        -ms-animation: fadein 4s;
+         -o-animation: fadein 4s;
+}
+
+.in, #twitter:hover .out{
+   display:none;
+}
+.out, #twitter:hover .in{
+   display:inline;
+   animation: fadein 0.15s;
+   -webkit-animation: fadein 0.15s;
+        -moz-animation: fadein 0.15s;
+         -ms-animation: fadein 0.15s;
+          -o-animation: fadein 0.15s;
+}
+
+.in, #linkedin:hover .out{
+   display:none;
+}
+.out, #linkedin:hover .in{
+   display:inline;
+   animation: fadein 0.15s;
+   -webkit-animation: fadein 0.15s;
+        -moz-animation: fadein 0.15s;
+         -ms-animation: fadein 0.15s;
+          -o-animation: fadein 0.15s;
+}
+
+.in, #github:hover .out{
+   display:none;
+}
+.out, #github:hover .in{
+   display:inline;
+   animation: fadein 0.15s;
+   -webkit-animation: fadein 0.15s;
+        -moz-animation: fadein 0.15s;
+         -ms-animation: fadein 0.15s;
+          -o-animation: fadein 0.15s;
+}
+
+.in, #email:hover .out{
+   display:none;
+}
+.out, #email:hover .in{
+   display:inline;
+   animation: fadein 0.15s;
+   -webkit-animation: fadein 0.15s;
+        -moz-animation: fadein 0.15s;
+         -ms-animation: fadein 0.15s;
+          -o-animation: fadein 0.15s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
