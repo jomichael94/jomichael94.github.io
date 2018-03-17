@@ -123,6 +123,7 @@ hr {
          -o-animation: fadein 4s;
 }
 
+/*
 .in, #twitter:hover .out{
    display:none;
 }
@@ -170,6 +171,7 @@ hr {
          -ms-animation: fadein 0.15s;
           -o-animation: fadein 0.15s;
 }
+*/
 
 
 @keyframes fadein {
