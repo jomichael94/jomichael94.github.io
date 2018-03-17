@@ -1,106 +1,66 @@
 <!doctype html>
 <html>
-<head>
-	<!-- i promise there's nothing exciting in here -->
-	
-	<link rel="stylesheet" href="stylesheet.css">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Michael</title>
+  </head>
 
-	<link rel="shortcut icon" href="favicon3.ico" type="image/x-icon">
-	<meta charset='utf-8'>
-	
-	<!--
-	<title>ite m8?</title>
-	-->
+  <body>
 
-</head>
-<body>
-	<center>
-	<h1>hello!</h1>
-	<nav id="nav_bar">
-		<ul>
-			<li><a href="https://linkedin.com/in/jamesm94" target="_blank"><img src="assets/lin.png" alt="LinkedIn" id=	"lin" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
-				
-			<li><a href="https://twitter.com/jomichael1994" target="_blank"><img src="assets/twit.png" alt="Twitter" id="twit" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
-				
-			<li><a href="https://github.com/jomichael94" target="_blank"><img src="assets/git.png" alt="GitHub" id="git" onmouseover="hover(id);" onmouseout="hoverOut(id);" /></a></li>
-			<!--<li><a href="cv.html" alt="CV" style="font-size:16pt">CV</a></li>-->
-			<div id="nav_logo"></div>
-		</ul>
-	</nav>
-	<!--
-	<div id="hover_message">
-		<br>
-	</div>
-	-->
-	<img src="https://i.redditmedia.com/VepCdGN5UQEqL5Ud9ZEVSFHMPz5C8lwwPwQS4mUtADA.jpg?w=640&s=52c908aa4347e1e8859efcca1ab53735" id="image" onclick="genHomurs();" />
-	<!--
-	<p>So yeah, this website is currently under construction obv.
-	<br>I guess, uh... come back soon!</p><br>
-	-->
-	<br>
-	<p>uni work and other stuff coming soon :)</p>
-	<br><br><hr>
-	<footer>
-		&copy; James Michael, <a href="https://twitter.com/liamgallagher/status/596327486356590592?ref_src=twsrc%5Etfw" target="_blank">2018</a>
-	</footer>
-	</center>
+    <div class="header">
+      <div class="header_text">
+        <img src="assets/image4.png" alt="James"/>
+        <br>James Michael
+      </div>
 
-</body>
 
-<script>
-	var randm9 = Math.floor(Math.random() * 100);
-	var titleMsg = "ite m" + randm9 + "?";
-	document.title = titleMsg;
-	
-	//an variety of homuRs
-	var imgs = ["https://i.redditmedia.com/Qs6Obc14Wg-grNC2iDjhziXwVyL28Ih4N_svHrclhC0.jpg?w=640&s=22f00746aec23c5e25f9cceaeea1886d", 
-		    "https://i.redditmedia.com/VepCdGN5UQEqL5Ud9ZEVSFHMPz5C8lwwPwQS4mUtADA.jpg?w=640&s=52c908aa4347e1e8859efcca1ab53735", 
-		    "https://i.imgur.com/Fd0BvRr.jpg", 
-		    "https://scontent.fbrs1-1.fna.fbcdn.net/v/t1.0-9/22141025_1980104295560081_5978276775233294911_n.jpg?oh=a32ebb9183d67e42d822cf60ce5a4331&oe=5AB7F36D",
-		    "https://frinkiac.com/img/S05E10/133315.jpg",
-		    "https://frinkiac.com/img/S02E20/161592.jpg",
-		    "https://i.pinimg.com/736x/7d/53/9c/7d539cd815291ef65f393cb0d801d2c1--simpsons-meme-simpsons-art.jpg",
-		    "https://i.imgflip.com/1brkgi.jpg",
-		    "https://78.media.tumblr.com/2644c58e086abd804daa26b6add7dac6/tumblr_o68urm7Sl81ufp43oo1_1280.jpg",
-		    "https://i.pinimg.com/736x/36/44/20/36442050475c34e2804920e8bcc8946d.jpg"
-		   ];
-	
-	var j = 0;
-	var i = 0;
-	function genHomurs() {
-		//IRTNPMBAYIMIASOMHOUIATOKSEHBOIALAMSTWTOIPADINEOUBI
-		while (i == j) {
-			i = Math.floor(Math.random() * imgs.length);
-		}
-		document.getElementById("image").src = imgs[i];
-		j = i;
-		
-	};
+      <nav class="navbar">
+        <ul class="nav_list">
+          <li class="nav_item" id="twitter"><a href="https://twitter.com/jomichael1994" target="_blank"><img class="out" src="assets/twitter.png" alt="Twitter" title="Twitter"/><img class="in" src="assets/twitter_hover.png" alt="Twitter" title="Twitter"/></a></li>
+          <li class="nav_item" id="linkedin"><a href="https://www.linkedin.com/in/jamesm94/" target="_blank"><img class="out" src="assets/lin.png" alt="LinkedIn" title="LinkedIn"/><img class="in" src="assets/lin_hover.png" alt="LinkedIn" title="LinkedIn"/></a></li>
+          <li class="nav_item" id="github"><a href="https://github.com/jomichael1994" target="_blank"><img class="out" src="assets/git.png" alt="GitHub" title="GitHub"/><img class="in" src="assets/git_hover.png" alt="GitHub" title="GitHub"/></a></li>
+          <li class="nav_item" id="email"><a href="mailto:jomichael1994@gmail.com?Subject=Website" target="_blank"><img class="out" src="assets/email.png" alt="Email" title="Email Me!"/><img class="in" src="assets/email_hover.png" alt="Email" title="Email Me!"/></a></li>
+        </ul>
+      </nav>
+    </div>
 
-	function hover(id) {
-		var el_id = document.getElementById(id).id;
-		document.getElementById(id).src = "assets/".concat(el_id).concat("_hover.png");
-		/*
-		var message_el = document.getElementById("hover_message");
-		if (el_id == "twit") {
-			message_el.innerHTML = "Follow me on Twitter!";
-		} else if (el_id == "lin") {
-			message_el.innerHTML = "Connect with me on LinkedIn!";
-		} else if (el_id == "git") {
-			message_el.innerHTML = "Check out my projects on GitHub!";
-		}
-		*/
-	}
+    <div class="body_container">
+      <div class="intro">
+        <h1>Hello! I'm James.</h1>
+        <p>I'm a developer with skills in a range of languages and technologies.</p>
+        <p>I currently work as a Junior Developer for Cloud IQ, where I help configure our JavaScript tag across e-commerce sites. This role is my first since graduating from Swansea University, where I studied Computer Science for four years before graduating with a First Class Honours degree in 2017.
+        <p>Alongside Java, HTML, CSS and JavaScript, I have experience with MySQL, Python, C++, C#, ASP.NET MVC 5, and Android Studio. I also enjoy design work (whether it be front-end development or UX design) and have a good knowledge of Photoshop.
+          In my free time, I am keen to teach myself some new technologies, including Node.js and React.
+        <p>Here, you can find out about some of the projects I completed or worked on at university. I hope you enjoy!</p>
+      </div>
+    </div>
 
-	function hoverOut(id) {
-		var el_id = document.getElementById(id).id;
-		document.getElementById(id).src = "assets/".concat(el_id).concat(".png");
-		/*
-		var message_el = document.getElementById("hover_message");
-		message_el.innerHTML = "<br>";
-		*/
-	}
-</script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <hr>
 
+    <div class="body_container">
+      <div class="work_header">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="work">
+        <p>Coming soon!</p>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+
+
+  </body>
+
+  <script>
+  var _0x670a=["\x2E\x66\x6F\x6F\x74\x65\x72\x20\x70","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x26\x63\x6F\x70\x79\x3B\x20\x4A\x61\x6D\x65\x73\x20\x4D\x69\x63\x68\x61\x65\x6C\x2C\x20","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72"];var footer=document[_0x670a[1]](_0x670a[0]);footer[_0x670a[2]]= _0x670a[3]+  new Date()[_0x670a[4]]()
+  </script>
 </html>
