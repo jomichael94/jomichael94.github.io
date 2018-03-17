@@ -35,7 +35,6 @@ a {
 nav ul {
 	margin-top: 3px;
 	padding-left: 0px;
-	margin-bottom: 50px;
 			
 }
 nav li {
@@ -58,7 +57,7 @@ footer, #hover_message {
 
 #hover_message {
 	margin-top:-10px;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 	font-weight: bold;
 	color:#004265;
 }
@@ -67,8 +66,38 @@ footer, #hover_message {
 	margin-top: 40px;
 	margin-left: 70px;
 	margin-bottom: 60px;
+	display: inline-block;
 	
 }
+
+#view-source {
+	background-color: #0077b5;
+	color: white;
+	width: 150px;
+	height: 50px;
+	vertical-align: middle;
+	margin-top: 17px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#view-source a {
+	color: white;
+
+}
+#view-source:hover {
+	background-color: #0a2859;
+}
+
+#work-container {
+	display: inline-block;
+	margin: 0 50px 0 0;
+	width: 850px;
+	position: relative;
+	vertical-align: text-top;
+}
+
 .work h1{
 	color:#0077b5;
 	margin-bottom: -15px;
@@ -100,7 +129,8 @@ footer, #hover_message {
 footer{
 	max-width: 100%;
 	padding-bottom: 125px;
-	font-size: 11pt;
+	font-size: 10pt;
+	margin-top: 150px;
 }
 #nav_logo {
 	font-family: 'Neuton', serif;
@@ -111,7 +141,6 @@ footer{
 }
 body {
 	margin-top: 40px;
-	font-family:'courier new';
 }
 #top-button{
 	position:fixed;
@@ -121,15 +150,4 @@ body {
 #top-button img {
 	height:50px;
 	width:50px;
-}
-
-h1 {
-	font-size: 48pt;
-	font-weight: bold;
-	margin-bottom:0pt;
-	color:#0077b5;
-}
-footer a{
-	font-size: 10pt;
-	color: black;
 }
