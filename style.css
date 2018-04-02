@@ -190,6 +190,10 @@ hr {
   text-align: center;
 }
 
+.work_content a {
+  color: #1f64ab;
+}
+
 .tools a {
   margin: 5px 10px 5px 10px;
   text-align: center;
