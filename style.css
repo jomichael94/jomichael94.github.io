@@ -63,7 +63,7 @@
 body {
   margin: 0;
   background-color: white;
-  color: #0276b3;
+  color: #1f64ab;
   font-family: 'Kreon', serif;
 }
 
@@ -167,7 +167,7 @@ hr {
 }
 
 .project_btn {
-  background: #0276b3;
+  background: #1f64ab;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -191,7 +191,7 @@ hr {
 }
 
 .tools a {
-  margin: 5px 15px 5px 0px;
+  margin: 5px 10px 5px 10px;
   text-align: center;
   /* margin: 0 auto; */
 }
